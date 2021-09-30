@@ -1,10 +1,10 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function LED1_On() {
+function SENSOR1_ON() {
 	//alert("led on");
-	console.log("led on");
+	console.log("sensor1 on");
 	//document.getElementById("sensor").innerHTML="led on";
-	message = new Paho.MQTT.Message("ON");
+	message = new Paho.MQTT.Message("sensor1 activo");
     	message.destinationName = "ronnie.llagua@unach.edu.ec/t1";
     	client.send(message);
       
@@ -12,10 +12,10 @@ function LED1_On() {
 }
 
 
-function LED1_Off(){	
+function SENSOR2_ON(){	
 	//alert("led off");
-	console.log("led off");
-	message = new Paho.MQTT.Message("OFF");
+	console.log("sensor2 on");
+	message = new Paho.MQTT.Message("sensor2 activo");
     	message.destinationName = "ronnie.llagua@unach.edu.ec/t11";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
