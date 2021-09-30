@@ -21,20 +21,7 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function Semestre() {
-	//alert("led on");
-	console.log("inicio");
-	//document.getElementById("sensor").innerHTML="led on";
-	message = new Paho.MQTT.Message("INICIO");
-    	message.destinationName = "ronnie.llagua@unach.edu.ec/t1";
-    	client.send(message);
       
-
-}
-    
-  
-
-
 
 
 // Create a client instance
